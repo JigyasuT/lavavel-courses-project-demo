@@ -5,18 +5,24 @@
         {{-- Heading --}}
         <div class="text-center mb-12">
 
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
+            <x-text-wrapper
+                tag="h2"
+                class="text-gray-900 text-3xl sm:text-4xl lg:text-5xl"
+            >
                 Our Popular Courses
-            </h2>
+            </x-text-wrapper>
 
-            <p class="mt-4 text-gray-600 text-base sm:text-lg">
-                Explore trending programming and development courses to boost your career.
-            </p>
+            <x-text-wrapper
+                class="mt-4 text-base sm:text-lg"
+            >
+                Explore trending programming and development courses
+                to boost your career.
+            </x-text-wrapper>
 
         </div>
 
-        {{-- Grid --}}
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {{-- Courses Grid --}}
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
 
             <x-card-wrapper
                 icon="💻"
@@ -43,39 +49,9 @@
             />
 
             <x-card-wrapper
-                icon="🌐"
-                title="Java Full Stack"
-                description="Learn frontend and backend Java development."
-            />
-
-            <x-card-wrapper
                 icon="🤖"
                 title="AI & ML"
                 description="Explore Artificial Intelligence and Machine Learning."
-            />
-
-            <x-card-wrapper
-                icon="🐍"
-                title="Python"
-                description="Learn Python for web, AI, and automation."
-            />
-
-            <x-card-wrapper
-                icon="📱"
-                title="Flutter"
-                description="Build beautiful Android & iOS apps."
-            />
-
-            <x-card-wrapper
-                icon="🛢️"
-                title="SQL"
-                description="Master databases and SQL queries."
-            />
-
-            <x-card-wrapper
-                icon="🎨"
-                title="UI/UX"
-                description="Design modern and responsive interfaces."
             />
 
         </div>

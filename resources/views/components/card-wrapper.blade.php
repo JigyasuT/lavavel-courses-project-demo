@@ -1,5 +1,5 @@
 @props([
-    'icon' => '💻',
+    'icon' => 'course icons',
     'title' => 'Course Title',
     'description' => 'Course Description'
 ])
@@ -14,14 +14,19 @@
     </div>
 
     {{-- Title --}}
-    <h3 class="text-lg font-bold text-gray-800">
+    <x-text-wrapper
+        tag="h3"
+        class="text-gray-800"
+    >
         {{ $title }}
-    </h3>
+    </x-text-wrapper>
 
     {{-- Description --}}
-    <p class="mt-2 text-sm text-gray-500">
+    <x-text-wrapper
+        class="mt-2 text-sm"
+    >
         {{ $description }}
-    </p>
+    </x-text-wrapper>
 
     {{-- Buttons --}}
     <div class="mt-5 flex flex-col gap-3">
